@@ -6,10 +6,6 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		9CF88F8E212D0EC800C82CE4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CF88F8D212D0EC800C82CE4 /* main.cpp */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		9CF88F88212D0EC800C82CE4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -24,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		9CF88F8A212D0EC800C82CE4 /* Online Judge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Online Judge"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CF88F8D212D0EC800C82CE4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9CF88F9F212D10B600C82CE4 /* 100.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 100.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +34,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9CAFC116212E8F30007144A7 /* Book 1 */ = {
+			isa = PBXGroup;
+			children = (
+				9CAFC117212E8F4D007144A7 /* 1. Introduction */,
+			);
+			path = "Book 1";
+			sourceTree = "<group>";
+		};
+		9CAFC117212E8F4D007144A7 /* 1. Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				9CF88F9F212D10B600C82CE4 /* 100.cpp */,
+			);
+			path = "1. Introduction";
+			sourceTree = "<group>";
+		};
 		9CF88F81212D0EC800C82CE4 = {
 			isa = PBXGroup;
 			children = (
@@ -57,9 +69,17 @@
 		9CF88F8C212D0EC800C82CE4 /* Online Judge */ = {
 			isa = PBXGroup;
 			children = (
-				9CF88F8D212D0EC800C82CE4 /* main.cpp */,
+				9CF88FA1212D10BB00C82CE4 /* UVA */,
 			);
 			path = "Online Judge";
+			sourceTree = "<group>";
+		};
+		9CF88FA1212D10BB00C82CE4 /* UVA */ = {
+			isa = PBXGroup;
+			children = (
+				9CAFC116212E8F30007144A7 /* Book 1 */,
+			);
+			path = UVA;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +138,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CF88F8E212D0EC800C82CE4 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +256,7 @@
 		9CF88F92212D0EC800C82CE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EMBLDR5XKN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -246,6 +266,7 @@
 		9CF88F93212D0EC800C82CE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EMBLDR5XKN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
